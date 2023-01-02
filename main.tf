@@ -27,7 +27,7 @@ resource "aws_security_group" "mysg" {
         from_port = var.port
         to_port = var.port
         protocol = "tcp"
-        cidr_blocks = "var.cidr_block"
+        cidr_blocks = "[var.cidr_block]"
     }
 
     tags = {
